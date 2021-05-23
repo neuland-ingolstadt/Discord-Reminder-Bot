@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+}
+
+group 'com.supernova1750'
+version '1.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        name 'm2-dv8tion'
+        url 'https://m2.dv8tion.net/releases'
+    }
+}
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+dependencies {
+    implementation ('net.dv8tion:JDA:4.2.1_253') {
+        exclude module: 'opus-java'
+    }
+}
+
+
+jar {
+    manifest {
+        attributes "Main-Class": "com.supernova1750.neulandnotify.Bot"
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
