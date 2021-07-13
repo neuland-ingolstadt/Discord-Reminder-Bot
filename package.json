@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "glob": "^7.1.7",
+    "node-schedule": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0"
+  }
+}

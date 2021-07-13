@@ -1,0 +1,8 @@
+{
+    "token": "redacted",
+    "guild": "redacted",
+    "channel": "redacted",
+    "cron": "* * * * *",
+    "message": "@everyone Heute Abend um 20 Uhr ist Stammtisch! Diese Nachricht wurde automatisch gesendet. *beep*",
+    "dryRun": false
+}
